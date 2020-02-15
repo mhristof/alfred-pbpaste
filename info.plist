@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>pbpaste</string>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>0C5212AA-0950-4355-BCC5-9E44CB0B5830</key>
@@ -123,7 +125,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string></string>
+	<string>Mike Christof</string>
 	<key>description</key>
 	<string>Transforms the clipboard</string>
 	<key>disabled</key>
@@ -450,6 +452,6 @@ echo -n $dest</string>
 	<key>version</key>
 	<string>0.2.0</string>
 	<key>webaddress</key>
-	<string></string>
+    <string>https://github.com/mhristof/alfred-pbpaste</string>
 </dict>
 </plist>
