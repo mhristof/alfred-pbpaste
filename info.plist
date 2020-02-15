@@ -10,7 +10,43 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>3618C019-5461-419B-A710-34767A6F223C</string>
+				<string>5EFF1AFF-8C36-4126-A3C5-4444BA8A7377</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1D7520F8-F2C6-42E2-AD32-68999B8C1917</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1D7520F8-F2C6-42E2-AD32-68999B8C1917</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>29759E01-0D79-4211-BF49-8CF04BA33936</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>29759E01-0D79-4211-BF49-8CF04BA33936</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7E1A9BB9-4AA9-4660-B260-16398DE450D4</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -24,6 +60,59 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>5D6F30F0-657D-4B68-90F7-75499C18B8E5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5EFF1AFF-8C36-4126-A3C5-4444BA8A7377</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D8379BD8-EDAC-44D8-84A2-62348C9DBA75</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>0CDFB4D1-CAD3-4730-B14E-A897F1834F20</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3618C019-5461-419B-A710-34767A6F223C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7E1A9BB9-4AA9-4660-B260-16398DE450D4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>661CBAEE-6806-4605-8187-C92BA92F7AA1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>9C1E8E48-0784-4688-826B-A5A1E6C2E464</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D8379BD8-EDAC-44D8-84A2-62348C9DBA75</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>48F350CB-155B-4EA0-BFC9-826864FA7842</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -46,6 +135,46 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>dest=/tmp/alfred-pbpaste.alfredworkflow
+curl --silent -L $(./check-for-new-release.sh) &gt; $dest
+echo -n $dest</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D8379BD8-EDAC-44D8-84A2-62348C9DBA75</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>48F350CB-155B-4EA0-BFC9-826864FA7842</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>autopaste</key>
 				<true/>
 				<key>clipboardtext</key>
@@ -59,6 +188,43 @@
 			<string>5D6F30F0-657D-4B68-90F7-75499C18B8E5</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[
+                    {"imagefile":"d7decd016213d074877d1693968927997bc4a177.png","title":"upper","arg":"pbpaste | tr a-z A-Z","subtitle":"Converts clipboard to upper case"},
+                    {"imagefile":"92d6befee46761f6e5caf50d02c2785aa6cdbb5f.png","title":"lower","arg":"pbpaste | tr A-Z a-z","subtitle":"Converts clipboard to lower case"},
+                    {"imagefile":"J.png","title":"join","arg":"./join.sh","subtitle":"Join multilines"},
+                    {"imagefile":"20.png","title":"urlencode","arg":"pbpaste | python3 -c 'import sys; import urllib.parse; print(urllib.parse.quote(sys.stdin.read()))'","subtitle":"Url encode"},
+                    {"imagefile":"json.png","title":"json","arg":"./to_json.sh","subtitle":"Convert to nice json"},
+                    {"imagefile":"b64.png","title":"base64","arg":"./base64.sh","subtitle":"Convert to and from base64"},
+                    {"imagefile":"upate.png","title":"update","arg":"update","subtitle":"Update to the latest and greatest"}
+                    ]</string>
+				<key>keyword</key>
+				<string>p</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Calculating infinity</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>0C5212AA-0950-4355-BCC5-9E44CB0B5830</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -87,38 +253,123 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[
-                    {"imagefile":"d7decd016213d074877d1693968927997bc4a177.png","title":"upper","arg":"pbpaste | tr a-z A-Z","subtitle":"Converts clipboard to upper case"},
-                    {"imagefile":"92d6befee46761f6e5caf50d02c2785aa6cdbb5f.png","title":"lower","arg":"pbpaste | tr A-Z a-z","subtitle":"Converts clipboard to lower case"},
-                    {"imagefile":"J.png","title":"join","arg":"./join.sh","subtitle":"Join multilines"},
-                    {"imagefile":"20.png","title":"urlencode","arg":"pbpaste | python3 -c 'import sys; import urllib.parse; print(urllib.parse.quote(sys.stdin.read()))'","subtitle":"Url encode"},
-                    {"imagefile":"json.png","title":"json","arg":"./to_json.sh","subtitle":"Convert to nice json"},
-                    {"imagefile":"b64.png","title":"base64","arg":"./base64.sh","subtitle":"Convert to and from base64"}
-                    ]</string>
-				<key>keyword</key>
-				<string>p</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Calculating infinity</string>
-				<key>withspace</key>
-				<false/>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>https://github</string>
+						<key>outputlabel</key>
+						<string>update</string>
+						<key>uid</key>
+						<string>0CDFB4D1-CAD3-4730-B14E-A897F1834F20</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>0C5212AA-0950-4355-BCC5-9E44CB0B5830</string>
+			<string>5EFF1AFF-8C36-4126-A3C5-4444BA8A7377</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>New version available for alfred-tf-snippets</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>661CBAEE-6806-4605-8187-C92BA92F7AA1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./check-for-new-release.sh</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1D7520F8-F2C6-42E2-AD32-68999B8C1917</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>1</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>new version</string>
+						<key>uid</key>
+						<string>9C1E8E48-0784-4688-826B-A5A1E6C2E464</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>7E1A9BB9-4AA9-4660-B260-16398DE450D4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>\n</string>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>29759E01-0D79-4211-BF49-8CF04BA33936</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -132,25 +383,72 @@
 			<key>ypos</key>
 			<integer>160</integer>
 		</dict>
-		<key>3618C019-5461-419B-A710-34767A6F223C</key>
+		<key>1D7520F8-F2C6-42E2-AD32-68999B8C1917</key>
 		<dict>
 			<key>xpos</key>
 			<integer>300</integer>
 			<key>ypos</key>
+			<integer>310</integer>
+		</dict>
+		<key>29759E01-0D79-4211-BF49-8CF04BA33936</key>
+		<dict>
+			<key>xpos</key>
+			<integer>460</integer>
+			<key>ypos</key>
+			<integer>340</integer>
+		</dict>
+		<key>3618C019-5461-419B-A710-34767A6F223C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>465</integer>
+			<key>ypos</key>
 			<integer>160</integer>
+		</dict>
+		<key>48F350CB-155B-4EA0-BFC9-826864FA7842</key>
+		<dict>
+			<key>xpos</key>
+			<integer>670</integer>
+			<key>ypos</key>
+			<integer>10</integer>
 		</dict>
 		<key>5D6F30F0-657D-4B68-90F7-75499C18B8E5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>670</integer>
 			<key>ypos</key>
 			<integer>160</integer>
 		</dict>
+		<key>5EFF1AFF-8C36-4126-A3C5-4444BA8A7377</key>
+		<dict>
+			<key>xpos</key>
+			<integer>325</integer>
+			<key>ypos</key>
+			<integer>185</integer>
+		</dict>
+		<key>661CBAEE-6806-4605-8187-C92BA92F7AA1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>670</integer>
+			<key>ypos</key>
+			<integer>310</integer>
+		</dict>
+		<key>7E1A9BB9-4AA9-4660-B260-16398DE450D4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>535</integer>
+			<key>ypos</key>
+			<integer>330</integer>
+		</dict>
+		<key>D8379BD8-EDAC-44D8-84A2-62348C9DBA75</key>
+		<dict>
+			<key>xpos</key>
+			<integer>465</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>0.1.2</string>
+	<string>0.2.0</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
