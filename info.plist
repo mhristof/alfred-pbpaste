@@ -98,7 +98,7 @@
                     {"imagefile":"d7decd016213d074877d1693968927997bc4a177.png","title":"upper","arg":"pbpaste | tr a-z A-Z","subtitle":"Converts clipboard to upper case"},
                     {"imagefile":"92d6befee46761f6e5caf50d02c2785aa6cdbb5f.png","title":"lower","arg":"pbpaste | tr A-Z a-z","subtitle":"Converts clipboard to lower case"},
                     {"imagefile":"J.png","title":"join","arg":"pbpaste | tr -d \"\\n\"","subtitle":"Join multilines"},
-                    {"imagefile":"20.png","title":"urlencode","arg":"pbpaste | python3 -c 'import sys; import urllib.parse; print(urllib.parse.quote(sys.stdin.read()))'","subtitle":"Url encode"}
+                    {"imagefile":"20.png","title":"urlencode","arg":"pbpaste | python3 -c 'import sys; import urllib.parse; print(urllib.parse.quote(sys.stdin.read()))'","subtitle":"Url encode"},
                     {"imagefile":"json.png","title":"json","arg":"./to_json.sh","subtitle":"Convert to nice json"}
                     ]</string>
 				<key>keyword</key>
