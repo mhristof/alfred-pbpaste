@@ -7,7 +7,7 @@ SHELL := bash
 
 CURRENT_BRANCH ?= $(shell git rev-parse --abbrev-ref HEAD)
 
-pbpaste.alfredworkflow:
+zip:
 	git archive  --format zip HEAD > pbpaste.alfredworkflow
 
 version:
