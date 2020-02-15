@@ -19,6 +19,9 @@ validate:
 	xmllint info.plist
 	awk '/items/,/<\/string/' info.plist | grep -v items | sed 's/.*string>\[/\[/g' | sed 's!</string>!!g' | jq
 
+fragment:
+	@echo $(CURRENT_BRANCH) | tr -s '-' ' ' | cut -d ' ' -f1
+
 all:
 	@echo "Makefile needs your attention"
 
