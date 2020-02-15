@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
-	<key>category</key>
-	<string>Productivity</string>
+	<string>pbpaste</string>
 	<key>connections</key>
 	<dict>
 		<key>0C5212AA-0950-4355-BCC5-9E44CB0B5830</key>
@@ -96,7 +94,7 @@
 				<key>fixedorder</key>
 				<false/>
 				<key>items</key>
-                <string>[
+				<string>[
                     {"imagefile":"d7decd016213d074877d1693968927997bc4a177.png","title":"upper","arg":"pbpaste | tr a-z A-Z","subtitle":"Converts clipboard to upper case"},
                     {"imagefile":"92d6befee46761f6e5caf50d02c2785aa6cdbb5f.png","title":"lower","arg":"pbpaste | tr A-Z a-z","subtitle":"Converts clipboard to lower case"}
                     ]</string>
