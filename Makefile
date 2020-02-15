@@ -5,6 +5,7 @@ SHELL := bash
 .SHELLFLAGS := -eu -o pipefail -c
 .ONESHELL:
 
+CURRENT_BRANCH ?= $(shell git rev-parse --abbrev-ref HEAD)
 
 pbpaste.alfredworkflow:
 	git archive  --format zip HEAD > pbpaste.alfredworkflow
