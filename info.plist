@@ -208,7 +208,7 @@ echo -n $dest</string>
                     {"imagefile":"20.png","title":"urlencode","arg":"pbpaste | python3 -c 'import sys; import urllib.parse; print(urllib.parse.quote(sys.stdin.read()))'","subtitle":"Url encode"},
                     {"imagefile":"json.png","title":"json","arg":"./to_json.sh","subtitle":"Convert to nice json"},
                     {"imagefile":"b64.png","title":"base64","arg":"./base64.sh","subtitle":"Convert to and from base64"},
-                    {"imagefile":"upate.png","title":"update","arg":"update","subtitle":"Update to the latest and greatest"}
+                    {"imagefile":"update.png","title":"update","arg":"update","subtitle":"Update to the latest and greatest"}
                     ]</string>
 				<key>keyword</key>
 				<string>p</string>
