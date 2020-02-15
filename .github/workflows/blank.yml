@@ -1,0 +1,21 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup Node.js for use with actions
+      uses: actions/setup-node@v1.1.0
+    - name: install codedown
+      run: npm install -g codedown
+    - name: get terraform-provider-aws
+      run: make terraform-provider-aws
+    - name: generate all
+      run: make
+    - name: test
+      run: ./options.sh | jq .
