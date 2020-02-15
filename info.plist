@@ -99,7 +99,8 @@
                     {"imagefile":"92d6befee46761f6e5caf50d02c2785aa6cdbb5f.png","title":"lower","arg":"pbpaste | tr A-Z a-z","subtitle":"Converts clipboard to lower case"},
                     {"imagefile":"J.png","title":"join","arg":"pbpaste | tr -d \"\\n\"","subtitle":"Join multilines"},
                     {"imagefile":"20.png","title":"urlencode","arg":"pbpaste | python3 -c 'import sys; import urllib.parse; print(urllib.parse.quote(sys.stdin.read()))'","subtitle":"Url encode"},
-                    {"imagefile":"json.png","title":"json","arg":"./to_json.sh","subtitle":"Convert to nice json"}
+                    {"imagefile":"json.png","title":"json","arg":"./to_json.sh","subtitle":"Convert to nice json"},
+                    {"imagefile":"b64.png","title":"base64","arg":"./base64.sh","subtitle":"Convert to and from base64"}
                     ]</string>
 				<key>keyword</key>
 				<string>p</string>
