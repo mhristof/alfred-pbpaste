@@ -208,6 +208,7 @@ echo -n $dest</string>
                     {"imagefile":"20.png","title":"urlencode","arg":"pbpaste | python3 -c 'import sys; import urllib.parse; print(urllib.parse.quote(sys.stdin.read()))'","subtitle":"Url encode"},
                     {"imagefile":"json.png","title":"json","arg":"./to_json.sh","subtitle":"Convert to nice json"},
                     {"imagefile":"b64.png","title":"base64","arg":"./base64.sh","subtitle":"Convert to and from base64"},
+                    {"imagefile":"redact.png","title":"redact","arg":"./redact.sh","subtitle":"Remove sensitive information"},
                     {"imagefile":"update.png","title":"update","arg":"update","subtitle":"Update to the latest and greatest"}
                     ]</string>
 				<key>keyword</key>
@@ -455,7 +456,7 @@ echo -n $dest</string>
 		<string>~/bin:~/.local/bin:~/.brew/opt/coreutils/libexec/gnubin:~/.brew/opt/make/libexec/gnubin:~/.brew/opt/grep/libexec/gnubin:~/.brew/opt/findutils/libexec/gnubin:~/Library/Python/3.7/bin:~/.brew/opt/python/libexec/bin:~/.brew/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin::~/.brew/opt/fzf/bin</string>
 	</dict>
 	<key>version</key>
-	<string>0.2.4</string>
+	<string>0.3.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/mhristof/alfred-pbpaste</string>
 </dict>
