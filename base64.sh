@@ -3,11 +3,10 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-pbpaste | base64 -d &> /dev/null && {
+if [[ "$(pbpaste | base64 -d)" = *[![:ascii:]]* ]]; then
+    pbpaste | base64 -w 0
+else
     pbpaste | base64 -d
-    exit 0
-}
-
-pbpaste | base64
+fi
 
 exit 0
