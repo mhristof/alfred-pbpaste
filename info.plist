@@ -458,7 +458,7 @@ echo -n $dest</string>
 		<string>~/bin:~/.local/bin:~/.brew/opt/coreutils/libexec/gnubin:~/.brew/opt/make/libexec/gnubin:~/.brew/opt/grep/libexec/gnubin:~/.brew/opt/findutils/libexec/gnubin:~/Library/Python/3.7/bin:~/.brew/opt/python/libexec/bin:~/.brew/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin::~/.brew/opt/fzf/bin</string>
 	</dict>
 	<key>version</key>
-	<string>0.6.0</string>
+	<string>0.6.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/mhristof/alfred-pbpaste</string>
 </dict>
