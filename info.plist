@@ -210,6 +210,7 @@ echo -n $dest</string>
                     {"imagefile":"b64.png","title":"base64","arg":"./base64.sh","subtitle":"Convert to and from base64"},
                     {"imagefile":"redact.png","title":"redact","arg":"./redact.sh","subtitle":"Remove sensitive information"},
                     {"imagefile":"redact.png","title":"unescape","arg":"./unescape.sh","subtitle":"Removed escaped characters"},
+                    {"imagefile":"sha.png","title":"sha","arg":"./sha.sh","subtitle":"Converts the input to a sha256 checksum"},
                     {"imagefile":"update.png","title":"update","arg":"update","subtitle":"Update to the latest and greatest"}
                     ]</string>
 				<key>keyword</key>
