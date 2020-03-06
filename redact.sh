@@ -11,6 +11,8 @@ pbpaste | while IFS= read line; do
         line=$(echo $line | sed "s!${aws_secret}!${aws_secret:0:5}xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx${aws_secret:35:40}!g")
     fi
 
+    line=${line/$USER/username}
+
     echo $line
 done
 
